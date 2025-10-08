@@ -11,9 +11,12 @@ Cherubin is a real-time network monitoring tool written in Python. It displays d
 
 ## Installation
 git clone https://github.com/kamilwest/cherubin.git
-> cd cherubin
-> pip install -r requirements.txt
-> # or just
+
+cd cherubin
+
+pip install -r requirements.txt
+
+# or just
 pip install rich
 
 # Usage
