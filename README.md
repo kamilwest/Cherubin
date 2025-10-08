@@ -54,11 +54,13 @@ The batch file will automatically create a virtual environment, install required
 # Notes & Recommendations
 
 -Best viewed in a console window; avoid full-screen terminal for optimal visual effect.
+
 -Colors indicate network load:
     Green: Low usage
     Yellow: Moderate usage
     Red: High usage
 -The program logs exceptions to Cherubin_error.log.
+
 -Lightweight and does not require admin privileges.
 
 # Future Enhancements
