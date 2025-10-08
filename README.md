@@ -59,6 +59,7 @@ The batch file will automatically create a virtual environment, install required
     Green: Low usage
     Yellow: Moderate usage
     Red: High usage
+    
 -The program logs exceptions to Cherubin_error.log.
 
 -Lightweight and does not require admin privileges.
