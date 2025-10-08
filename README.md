@@ -1,20 +1,20 @@
 # Cherubin
-Cherubin is a real-time network monitoring tool written in Python. It displays data transfer, speeds, packet counts, and top remote IPs in colorful console tables using the Rich
-library.
 
-# Features:
+Cherubin is a real-time network monitoring tool written in Python. It displays data transfer, speeds, packet counts, and top remote IPs in colorful console tables using the Rich library.
 
-*Data Transfer: Real-time upload and download displayed in clear bars and numbers.
-Speed & Packets: Shows Mbps for sending/receiving and number of packets.
-Top Remote IPs: Displays the most active external connections (configurable with --top).
-Alerts: Color-coded highlights based on thresholds (green, yellow, red) with configurable alert Mbps.
-Lightweight and Portable: Console-based, only requires Python and Rich library.*
+## Features
+- **Data Transfer:** Real-time upload and download displayed in clear bars and numbers.  
+- **Speed & Packets:** Shows Mbps for sending/receiving and number of packets.  
+- **Top Remote IPs:** Displays the most active external connections (configurable with `--top`).  
+- **Alerts:** Color-coded highlights based on thresholds (green, yellow, red) with configurable alert Mbps.  
+- **Lightweight and Portable:** Console-based, only requires Python and Rich library.  
 
-# Installation
-
+## Installation
 git clone https://github.com/kamilwest/cherubin.git
 cd cherubin
-pip install -r requirements.txt  # or just pip install rich
+pip install -r requirements.txt
+# or just
+pip install rich
 
 # Usage
 
