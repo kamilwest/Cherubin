@@ -20,9 +20,9 @@ pip install rich
 
 python cherubin.py [--top 5] [--alert_mbps 50.0] [--refresh 1.0]
 
-*--top : Number of top remote IPs to display (default: 5)
---alert_mbps : Threshold for highlighting high-speed interfaces (default: 50 Mbps)
---refresh : Refresh interval in seconds (default: 1.0)*
+*--top : Number of top remote IPs to display (default: 5)*
+*--alert_mbps : Threshold for highlighting high-speed interfaces (default: 50 Mbps)*
+*--refresh : Refresh interval in seconds (default: 1.0)*
 
 # Building Cherubin
 
