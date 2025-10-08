@@ -57,10 +57,13 @@ After running this, you’ll find the executable in the dist folder.
 
 # Future Enhancements
 
--Integrate optional logging for historical network trends.
--Add customizable color themes.
--Package as standalone executable with PyInstaller for Windows/Linux.
--Possible integration with other monitoring tools for automated alerts.
+Integrate optional logging for historical network trends.
+
+Add customizable color themes.
+
+Package as standalone executable with PyInstaller for Windows/Linux.
+
+Possible integration with other monitoring tools for automated alerts.
 
 #License
 
