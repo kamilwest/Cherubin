@@ -45,6 +45,12 @@ pyinstaller --onefile --noconsole --icon=cherubin.ico --hidden-import=psutil --h
 
 After running this, you’ll find the executable in the dist folder.
 
+# .bat file
+
+You can just use the start.bat provided with the repository to start Cherubin. Easy, right?
+
+The batch file will automatically create a virtual environment, install required packages if missing, and launch Cherubin.
+
 # Notes & Recommendations
 
 -Best viewed in a console window; avoid full-screen terminal for optimal visual effect.
