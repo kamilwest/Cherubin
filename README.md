@@ -24,31 +24,6 @@ python cherubin.py [--top 5] [--alert_mbps 50.0] [--refresh 1.0]
 --alert_mbps : Threshold for highlighting high-speed interfaces (default: 50 Mbps)
 --refresh : Refresh interval in seconds (default: 1.0)*
 
-# Example Output
-
-Transfer
-┌───────────────┬───────────────┬───────────────┐
-│ Interface     │ Upload        │ Download      │
-├───────────────┼───────────────┼───────────────┤
-│ Ethernet 2    │ ||||||||||    │ |||||||||||   │
-│ Loopback      │ 0 B           │ 0 B           │
-└───────────────┴───────────────┴───────────────┘
-
-Speed & Packets
-┌───────────────┬───────────────┬───────────────┬───────────────┬───────────────┐
-│ Interface     │ Sent Mbps     │ Recv Mbps     │ Sent Pkts     │ Recv Pkts     │
-├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-│ Ethernet 2    │ 1.09          │ 47.12         │ 2101          │ 4207          │
-└───────────────┴───────────────┴───────────────┴───────────────┴───────────────┘
-
-Top Remote IPs
-┌───────────────────┬───────────────┐
-│ Remote IP         │ Connections   │
-├───────────────────┼───────────────┤
-│ 127.0.0.1         │ 37            │
-│ 155.133.230.12    │ 8             │
-└───────────────────┴───────────────┘
-
 # Notes & Recommendations
 
 -Best viewed in a console window; avoid full-screen terminal for optimal visual effect.
