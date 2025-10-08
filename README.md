@@ -1,2 +1,71 @@
 # Cherubin
-Live network monitor in Python with real-time traffic, speeds, packets, and top remote IPs, visualized with rich tables.
+Cherubin is a real-time network monitoring tool written in Python. It displays data transfer, speeds, packet counts, and top remote IPs in colorful console tables using the Rich
+library.
+
+# Features:
+
+*Data Transfer: Real-time upload and download displayed in clear bars and numbers.
+Speed & Packets: Shows Mbps for sending/receiving and number of packets.
+Top Remote IPs: Displays the most active external connections (configurable with --top).
+Alerts: Color-coded highlights based on thresholds (green, yellow, red) with configurable alert Mbps.
+Lightweight and Portable: Console-based, only requires Python and Rich library.*
+
+# Installation
+
+git clone https://github.com/kamilwest/cherubin.git
+cd cherubin
+pip install -r requirements.txt  # or just pip install rich
+
+# Usage
+
+python cherubin.py [--top 5] [--alert_mbps 50.0] [--refresh 1.0]
+
+*--top : Number of top remote IPs to display (default: 5)
+--alert_mbps : Threshold for highlighting high-speed interfaces (default: 50 Mbps)
+--refresh : Refresh interval in seconds (default: 1.0)*
+
+# Example Output
+
+Transfer
+┌───────────────┬───────────────┬───────────────┐
+│ Interface     │ Upload        │ Download      │
+├───────────────┼───────────────┼───────────────┤
+│ Ethernet 2    │ ||||||||||    │ |||||||||||   │
+│ Loopback      │ 0 B           │ 0 B           │
+└───────────────┴───────────────┴───────────────┘
+
+Speed & Packets
+┌───────────────┬───────────────┬───────────────┬───────────────┬───────────────┐
+│ Interface     │ Sent Mbps     │ Recv Mbps     │ Sent Pkts     │ Recv Pkts     │
+├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
+│ Ethernet 2    │ 1.09          │ 47.12         │ 2101          │ 4207          │
+└───────────────┴───────────────┴───────────────┴───────────────┴───────────────┘
+
+Top Remote IPs
+┌───────────────────┬───────────────┐
+│ Remote IP         │ Connections   │
+├───────────────────┼───────────────┤
+│ 127.0.0.1         │ 37            │
+│ 155.133.230.12    │ 8             │
+└───────────────────┴───────────────┘
+
+# Notes & Recommendations
+
+-Best viewed in a console window; avoid full-screen terminal for optimal visual effect.
+-Colors indicate network load:
+    Green: Low usage
+    Yellow: Moderate usage
+    Red: High usage
+-The program logs exceptions to Cherubin_error.log.
+-Lightweight and does not require admin privileges.
+
+# Future Enhancements
+
+-Integrate optional logging for historical network trends.
+-Add customizable color themes.
+-Package as standalone executable with PyInstaller for Windows/Linux.
+-Possible integration with other monitoring tools for automated alerts.
+
+#License
+
+MIT License – free to use, modify, and distribute.
