@@ -65,6 +65,6 @@ Package as standalone executable with PyInstaller for Windows/Linux.
 
 Possible integration with other monitoring tools for automated alerts.
 
-#License
+# License
 
 MIT License – free to use, modify, and distribute.
