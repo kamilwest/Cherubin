@@ -11,9 +11,9 @@ Cherubin is a real-time network monitoring tool written in Python. It displays d
 
 ## Installation
 git clone https://github.com/kamilwest/cherubin.git
-cd cherubin
-pip install -r requirements.txt
-# or just
+> cd cherubin
+> pip install -r requirements.txt
+> # or just
 pip install rich
 
 # Usage
@@ -21,16 +21,23 @@ pip install rich
 python cherubin.py [--top 5] [--alert_mbps 50.0] [--refresh 1.0]
 
 *--top : Number of top remote IPs to display (default: 5)*
+
 *--alert_mbps : Threshold for highlighting high-speed interfaces (default: 50 Mbps)*
+
 *--refresh : Refresh interval in seconds (default: 1.0)*
 
 # Building Cherubin
 
 To build the executable from source, use the following command (requires Python 3.13+):
-(in venv) pyinstaller --onefile --noconsole --icon=cherubin.ico --hidden-import=psutil --hidden-import=rich cherubin.py
+(in venv) 
+pyinstaller --onefile --noconsole --icon=cherubin.ico --hidden-import=psutil --hidden-import=rich cherubin.py
+
 --onefile — package everything into a single executable
+
 --noconsole — hide the console window (optional for GUI apps)
+
 --icon=cherubin.ico — use the provided icon
+
 --hidden-import — include dependencies not automatically detected
 
 After running this, you’ll find the executable in the dist folder.
